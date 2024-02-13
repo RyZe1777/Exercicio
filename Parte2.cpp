@@ -14,7 +14,7 @@ float menor = 0;
 float maior_10 = 0;
 float menor_10 = 0; 
 int array[10]= {10,56,9,12,70,23,32,69,17,80};
-int n;
+
 
 
 int main(){
