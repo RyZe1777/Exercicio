@@ -26,3 +26,16 @@ int main(){
     }else{
         cout <<"Nao podemos dividir por 0" <<endl; //informa que nao podemos dividir por 0
     }
+
+    //AREA DO CIRCULO
+    
+    cout << "Vamos calcular a area de um circulo!! " <<endl;
+    cout << "Qual o valor do raio: " <<endl; //pergunta o valor do raio (r)
+        cin >> r;
+
+    cout << "A area do circulo e: ";
+    cout << PI * r*r <<endl; //formula para calcular a area do circulo
+
+    return 0;
+}
+
