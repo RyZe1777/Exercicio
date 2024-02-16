@@ -7,28 +7,26 @@ float notas[5];
 float soma;
 float media;
 float maior = 0;
-float menor = 0;
+float menor = 10;
 
 //variaveis array 10
 
-float maior_10 = 10;
-float menor_10 = 0; 
+float maior_10 = 0;
+float menor_10 = 10; 
 int array[10]= {10,56,9,12,70,23,32,69,17,80};
 
 
-
 int main(){
+    
      //NOTAS DOS ALUNOS
     
-
     cout << "Quais sao as notas dos alunos? " <<endl;
-        menor = array[0];
-        maior = array[0];
     for(int x=0; x<5; x++){
         cout <<"Aluno" << x + 1 << ":" <<endl;
         cin >> notas[x];
-        soma += notas[x]; //mandar para o array em espaços difs
+        soma += notas[x]; // soma as notas todos q escolhemos para armazenar no ciclo for
         media = soma/5; //media 
+        
         if(notas[x] < menor){  
             menor = notas[x];
         }
@@ -44,8 +42,6 @@ int main(){
     //ARRAY DE 10
 
     cout << "VAMOS IMPRIMIR O MAXIMO E MINIMO DO ARRAY 10: " << endl;
-        menor_10 = array[0];
-        maior_10 = array[0];
     for (int z = 0; z < 10; z++) {
         if (array[z] < menor_10) {
             menor_10 = array[z];
@@ -61,4 +57,3 @@ int main(){
 
     return 0;
 }
-
