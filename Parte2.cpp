@@ -6,7 +6,7 @@ using namespace std;
 float notas[5];
 float soma;
 float media;
-float maior = 10;
+float maior = 0;
 float menor = 0;
 
 //variaveis array 10
