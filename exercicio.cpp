@@ -1,10 +1,14 @@
 #include <iostream>
 using namespace std;
 
+//contas
+
 int a;
 int b;
 const double PI = 3.14159;
 int r;
+
+//variavies array 5
 
 float notas[5];
 float soma;
@@ -12,6 +16,7 @@ float media;
 float maior = 0;
 float menor = 10;
 
+//variavies array 10
 
 float maior_10 = 0;
 float menor_10 = 10; 
