@@ -8,7 +8,7 @@ int b;
 const double PI = 3.14159;
 int r;
 
-//variavies array 5
+//variaveis array 5
 
 float notas[5];
 float soma;
@@ -16,11 +16,14 @@ float media;
 float maior = 0;
 float menor = 10;
 
-//variavies array 10
+//variaveis array 10
 
 float maior_10 = 0;
 float menor_10 = 10; 
 int array[10]= {10,56,9,12,70,23,32,69,17,80};
+
+//variavel tabuada
+
 int n;
 
 
