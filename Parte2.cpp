@@ -6,12 +6,12 @@ using namespace std;
 float notas[5];
 float soma;
 float media;
-float maior = 0;
+float maior = 10;
 float menor = 0;
 
 //variaveis array 10
 
-float maior_10 = 0;
+float maior_10 = 10;
 float menor_10 = 0; 
 int array[10]= {10,56,9,12,70,23,32,69,17,80};
 
@@ -61,3 +61,4 @@ int main(){
 
     return 0;
 }
+
