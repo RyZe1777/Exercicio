@@ -1,40 +1,40 @@
 #include <iostream>
 using namespace std;
 
-//contas
+//CONTAS
 
 int a;
 int b;
 const double PI = 3.14159;
 int r;
 
-//variaveis array 5
+//VARIAVEIS ARRAY 5
 
 float notas[5];
 float soma;
 float media;
 float maior = 0;
 float menor = 10;
+// Esses valores garantem que as notas inseridas durante o loop serão corretamente atualizadas para a menor e maior nota encontradas até o momento.
 
-//variaveis array 10
+//VARIAVEIS ARRAY 10
 
 float maior_10 = 0;
 float menor_10 = 10; 
 int array[10]= {10,56,9,12,70,23,32,69,17,80};
 
-//variavel tabuada
+//VARIAVEIS TABUADA
 
 int n;
-
 
 
 int main(){
     
     //CONTAS
     
-    cout <<"Qual o valor de a: " <<endl; //pergunta o valor de a
+    cout <<"Qual o valor de a: " <<endl; 
         cin >> a;
-    cout <<"Qual o valor de b: " <<endl; //pergunta o valor de b
+    cout <<"Qual o valor de b: " <<endl; 
         cin >> b;
  
     cout << a+b <<endl; //adiçao
@@ -45,13 +45,13 @@ int main(){
         cout << a/b <<endl; //divisao
         cout << a%b <<endl; //resto da divisao
     }else{
-        cout <<"Nao podemos dividir por 0" <<endl; //informa que nao podemos dividir por 0
+        cout <<"Nao podemos dividir por 0" <<endl; 
     }
     
     //AREA DO CIRCULO
     
     cout << "Vamos calcular a area de um circulo!! " <<endl;
-    cout << "Qual o valor do raio: " <<endl; //pergunta o valor do raio (r)
+    cout << "Qual o valor do raio (r): " <<endl; 
         cin >> r;
 
     cout << "A area do circulo e: ";
@@ -69,7 +69,7 @@ int main(){
         soma += notas[x]; // soma as notas todos q escolhemos para armazenar no ciclo for
         media = soma/5; //media 
         
-        if(notas[x] < menor){  
+        if(notas[x] < menor){   //se alguma nota do array for mais pequena do que o menor numero da cout a essa nota
             menor = notas[x];
         }
         if(notas[x] > maior){
