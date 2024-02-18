@@ -45,6 +45,7 @@ int main(){
     cout <<"Media: " << media <<endl;
     cout <<"Menor: " << menor <<endl;
     cout <<"Maior: " << maior <<endl;
+    
     //ARRAY DE 10
 
     cout << "VAMOS IMPRIMIR O MAXIMO E MINIMO DO ARRAY 10: " << endl;
