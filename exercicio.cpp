@@ -15,7 +15,7 @@ float soma;
 float media;
 float maior = 0;
 float menor = 0;
-// Esses valores garantem que as notas inseridas durante o loop serão corretamente atualizadas para a menor e maior nota encontradas até o momento.
+// estes valores garantem que as notas inseridas durante o loop serão corretamente atualizadas para a menor e maior nota encontradas ate ao momento
 
 //VARIAVEIS ARRAY 10
 
@@ -69,10 +69,10 @@ int main(){
         soma += notas[x]; // soma as notas todos q escolhemos para armazenar no ciclo for
         media = soma/5; //media 
     }
-        menor = notas[0];
+        menor = notas[0]; //igualar 1 index
         maior = notas[0];
     
-    for(int y=0; y<5; y++){
+    for(int y=0; y<5; y++){ //5 vezes o código que vai comparar se a nota do indice atual é menor do que a nota da variavel MENOR
         if(notas[y] < menor){ 
         menor = notas[y];
         }
