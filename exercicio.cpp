@@ -14,7 +14,7 @@ float notas[5];
 float soma;
 float media;
 float maior = 0;
-float menor = 10;
+float menor = 0;
 // Esses valores garantem que as notas inseridas durante o loop serão corretamente atualizadas para a menor e maior nota encontradas até o momento.
 
 //VARIAVEIS ARRAY 10
@@ -52,7 +52,7 @@ int main(){
     
     cout << "Vamos calcular a area de um circulo!! " <<endl;
     cout << "Qual o valor do raio (r): " <<endl; 
-        cin >> r;
+    cin >> r;
 
     cout << "A area do circulo e: ";
     cout << PI * r*r <<endl; //formula para calcular a area do circulo
@@ -68,15 +68,21 @@ int main(){
         cin >> notas[x];
         soma += notas[x]; // soma as notas todos q escolhemos para armazenar no ciclo for
         media = soma/5; //media 
-        
-        if(notas[x] < menor){   //se alguma nota do array for mais pequena do que o menor numero da cout a essa nota
-            menor = notas[x];
-        }
-        if(notas[x] > maior){
-            maior = notas[x];
+    }
+        menor = notas[0];
+        maior = notas[0];
+    
+    for(int y=0; y<5; y++){
+        if(notas[y] < menor){ 
+        menor = notas[y];
         }
     }
-    
+    for(int p=0; p<5; p++){ 
+        if(notas[p] > maior){
+        maior = notas[p];
+        }
+    }
+
     cout <<"Media: " << media <<endl;
     cout <<"Menor: " << menor <<endl;
     cout <<"Maior: " << maior <<endl;
@@ -105,7 +111,6 @@ int main(){
     for (int k = 1; k <= 10; ++k) {
         cout << n << " x " << k << " = " << n * k << endl;
     }
-
 
 
     return 0;
