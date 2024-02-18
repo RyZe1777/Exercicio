@@ -21,24 +21,30 @@ int main(){
      //NOTAS DOS ALUNOS
     
     cout << "Quais sao as notas dos alunos? " <<endl;
+  
     for(int x=0; x<5; x++){
         cout <<"Aluno" << x + 1 << ":" <<endl;
         cin >> notas[x];
         soma += notas[x]; // soma as notas todos q escolhemos para armazenar no ciclo for
         media = soma/5; //media 
-        
-        if(notas[x] < menor){  
-            menor = notas[x];
-        }
-        if(notas[x] > maior){
-            maior = notas[x];
+    }
+        menor = notas[0];
+        maior = notas[0];
+    
+    for(int y=0; y<5; y++){
+        if(notas[y] < menor){ 
+        menor = notas[y];
         }
     }
-    
+    for(int p=0; p<5; p++){ 
+        if(notas[p] > maior){
+        maior = notas[p];
+        }
+    }
+
     cout <<"Media: " << media <<endl;
     cout <<"Menor: " << menor <<endl;
     cout <<"Maior: " << maior <<endl;
-    
     //ARRAY DE 10
 
     cout << "VAMOS IMPRIMIR O MAXIMO E MINIMO DO ARRAY 10: " << endl;
